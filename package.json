@@ -1,0 +1,31 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --forceExit",
+    "start": "node index.js",
+    "e2e": "cypress open",
+    "analysis": "prettier --write .",
+    "performance": "artillery run performance.yml",
+    "dependency_audit": "npm audit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "artillery": "^2.0.12",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7",
+    "xss": "^1.0.15"
+  },
+  "devDependencies": {
+    "cypress": "^13.10.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "supertest": "^7.0.0"
+  }
+}
